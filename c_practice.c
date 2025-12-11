@@ -1,11 +1,11 @@
 #include <stdio.h>
-int add(int a, int b) {
-  return a + b;
-}
 int main() {
-  int (*ptr)(int, int) = add;
-  int result = ptr(5, 3);
-  printf("Result: %d", result);
+    int a,b;
+    printf("Enter first number: ");
+    scanf("%d", &a);
+    printf("Enter second number: ");
+    scanf("%d", &b);
+    a>b ? printf("a is greater") : printf("b is greater");
   return 0;
 }
     
