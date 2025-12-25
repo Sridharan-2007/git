@@ -1,11 +1,14 @@
 #include <stdio.h>
 int main() {
-    int a,b;
-    printf("Enter first number: ");
-    scanf("%d", &a);
-    printf("Enter second number: ");
-    scanf("%d", &b);
-    a>b ? printf("a is greater") : printf("b is greater");
-  return 0;
+    int num , rev = 0,dig;
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+    while (num >0){
+        dig = num % 10;
+        rev = rev * 10 + dig;
+        num = num / 10;
+    }
+    printf("Number is: %d\n", rev);
+    return 0;
 }
     
