@@ -22,6 +22,11 @@ int main() {
             }
         }
     }
+    for (i = 0; i < n / 2; i++) {
+        k = arr[i];
+        arr[i] = arr[n - i - 1];
+        arr[n - i - 1] = k;
+    }
 
     printf("Sorted array: \n");
     for (i = 0; i < n; i++)
