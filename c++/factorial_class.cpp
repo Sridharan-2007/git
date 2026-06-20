@@ -1,4 +1,4 @@
-//Program to Find Factorial Using Class
+
 #include <iostream>
 using namespace std;
 class Factorial {
